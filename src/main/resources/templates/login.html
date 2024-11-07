@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyle.css">
+    <title>Login | Sistema de Controle de Academias</title>
+</head>
+<body><br><br><br><br>
+    <form th:action="@{/login}" method="post">
+        <div class="loginBox">
+            <h1>Login</h1>
+            <label for="emailLogin">E-mail:</label><br><br>
+            <input style="width: 450px; height: 30px;" minlength="11" maxlength="50" type="email" id="emailLogin"
+            name="email" placeholder=" nome@exemplo.com" required><br><br>
+        </div>
+
+        <div class="loginBox">
+            <label for="password">Senha:</label><br><br>
+            <input style="width: 450px; height: 30px;" type="password" minlength="6" maxlength="16" id="password" 
+            name="password" placeholder=" Digite sua senha" required>
+        </div>
+
+        <div class="loginBox"><br><br>
+        <button href="telaInicial.html" type="submit" value="login">Entrar</button><br><br>
+        </div>
+        </form>
+
+        <a href="#" class="esqueceuSenha">Esqueceu a senha?</a>
+
+        <img src="https://8507288.fs1.hubspotusercontent-na1.net/hub/8507288/hubfs/Big-Box_Gym.png">
+    
+    <footer>Desenvolvido por Ana Clara Oliveira Fernandes (1-2023127125) | Iasmin Campos Tabosa (1-2023126865)
+        |  Yanna Kelly Alcantara Sampaio(1-2023127234)</footer>
+</body>
+</html>
